@@ -1,0 +1,47 @@
+@use 'variables';
+/* Footer content layout and styling */
+.footer-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    font-family: variables.$secondary-font; 
+    color: variables.$tertiary-color; 
+    margin: 1em 0;
+}
+
+/* Footer text styling */
+.footer-content p {
+    margin: 10px 0; 
+    font-size: 1rem;
+    // color: $tertiary-color;
+}
+
+/* Social icons container layout */
+.social-icons {
+    display: flex;
+    gap: 25px; /* Space between social icons */
+    margin-top: 0.5em; 
+    font-size: 1.5rem; 
+}
+
+/* Icon links styling */
+.social-icons a {
+    font-size: 1em;
+    color: variables.$tertiary-color; 
+    display: inline-block; /* Needed for transform */
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), color 0.4s ease; /* Smooth transitions */
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Light 3D effect */
+    transform: scale(1.2) translateY(-2px); /* Scale and move up */
+    background: linear-gradient(
+        to right,
+        variables.$gradient-color-one, /* Gradient start */
+        variables.$gradient-color-two  /* Gradient end */
+    );
+    -webkit-background-clip: text; /* Apply gradient to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+}
