@@ -6,6 +6,7 @@ import TechStack from './assets/pages/TechStack'; // TechStack page component
 import Projects from './assets/pages/Projects'; // Projects page component
 import Contact from './assets/pages/Contact'; // Contact page component
 import Navbar from './assets/components/Navbar'; // Navbar component
+import Footer from './assets/components/Footer'; // Footer component
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
+                <Footer></Footer>
             </BrowserRouter>
         </>
     );

@@ -1,6 +1,10 @@
+
 function Home() {
 
-    return <div>Welcome to the Home Page</div>
-
+    return (
+        <div className="container">
+            <h1></h1>
+        </div>
+    )
 }
 export default Home;

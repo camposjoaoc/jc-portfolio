@@ -2,5 +2,15 @@
 @use "variables";
 
 body {
-    // background-color: variables.$background-color;
+    background-color: variables.$background-color;
+}
+
+.container {
+  margin: 20px auto; /* 10px no topo e na base, 20px nas laterais */
+  width: 100%; 
+  max-width: 1600px; 
+  height: auto; 
+  max-height: 1024px; 
+  // background-color: lightgray; 
+
 }

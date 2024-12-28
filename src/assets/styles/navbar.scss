@@ -1,0 +1,158 @@
+@use 'variables';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+    // Navbar logo/title: styled with custom font and colors, centered
+.navbar-title {
+        font-family: variables.$primary-font;
+        font-size: 1.9rem;
+        font-weight: 400;
+        line-height: 36px;
+        text-decoration: none;
+        cursor: pointer;
+        background: linear-gradient(
+        to right,
+        variables.$gradient-color-one, /* Gradient start */
+        variables.$gradient-color-two  /* Gradient end */
+    );
+    -webkit-background-clip: text; /* Apply gradient to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+
+    // Desktop navigation links: aligned horizontally with spacing
+   .nav-links-desktop {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links-desktop li {
+    padding: 0 15px;
+}
+
+.nav-links-desktop li a {
+    text-decoration: none;
+    font-family: variables.$secondary-font; /* Use font variable */
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: variables.$tertiary-color; /* Text color */
+    display: inline-block; /* Needed for transform */
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), color 0.4s ease; /* Smooth transitions */
+}
+
+.nav-links-desktop li a:hover {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Light 3D effect */
+    transform: scale(1.2) translateY(-2px); /* Scale and move up */
+    background: linear-gradient(
+        to right,
+        variables.$gradient-color-one, /* Gradient start */
+        variables.$gradient-color-two  /* Gradient end */
+    );
+    -webkit-background-clip: text; /* Apply gradient to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+
+// Mobile menu: hidden by default, slides into view when active
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: variables.$background-color;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+
+    // Active mobile menu: displayed and positioned on-screen
+    &.flex {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    // Close button: aligned to top-right of the menu
+    .close {
+        align-self: flex-end;
+        margin: 20px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: variables.$primary-color;
+    }
+}
+
+// Mobile navigation links: displayed vertically with spacing
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    list-style: none;
+    padding: 0;
+    width: 50%;
+}
+
+.nav-links-mobile li {
+    border-bottom: 1px solid #787272;
+    padding-bottom: 1.2rem;
+}
+
+.nav-links-mobile li a {
+    text-decoration: none;
+    font-family: variables.$secondary-font; /* Use font variable */
+    font-size: 1.2rem;
+    color: variables.$primary-color;
+}
+
+.nav-links-mobile li a:hover {
+    color: variables.$quaternary-color;
+}
+
+// Hamburger button for mobile menu toggle: displayed only on mobile
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    z-index: 10;
+    position: relative;
+    padding: 0 1em;
+}
+
+// Overlay: darkens background when mobile menu is active
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}
+
+
+// Responsive styles: hide desktop links and display mobile elements on small screens
+@media screen and (max-width: 768px) {
+    .nav-links-desktop {
+        display: none !important;
+    }
+    .hamburger {
+        display: block;
+    }
+    .mobile-menu.flex + .hamburger {
+        display: none;
+    }
+}
