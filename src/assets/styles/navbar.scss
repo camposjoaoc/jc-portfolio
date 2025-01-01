@@ -145,7 +145,26 @@
 
 
 // Responsive styles: hide desktop links and display mobile elements on small screens
+
+/* Large screens (min-width: 1025px) */
+@media screen and (min-width: 1025px) and (max-width: 1285px) {
+    .navbar{
+        padding-left: 5px;
+    }
+}
+
+/* Tablet styles: medium screens (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar{
+        padding-left: 5px;
+    }
+}
+
+/* Mobile styles: small screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
+    .navbar{
+        padding-left: 5px;
+    }
     .nav-links-desktop {
         display: none !important;
     }

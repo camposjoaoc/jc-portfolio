@@ -29,8 +29,8 @@
 }
 
 .h1-title,
-.p-mail {
-    font-size: 1.5rem;
+.p-mail{
+    font-size: 2rem;
 }
 
 
@@ -96,12 +96,11 @@
 }
 
 .p-mail{
-    font-size: 2rem;
     white-space: nowrap; 
     overflow: hidden; 
     border-right: 2px solid #fff; /* Simulates the cursor */
-    width: 24ch; /* Width matches the number of characters */
-    animation: typing 3s steps(24, end), blink 0.6s step-end infinite;
+    width: 23.6ch; /* Width matches the number of characters */
+    animation: typing 3s steps(24, end), blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
@@ -124,25 +123,23 @@
 @media screen and (min-width: 1025px) {
     .form-content{
         width: 40%;
-}
- 
+    }
 }
 
 /* Tablet styles: medium screens (768px to 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
      .form-content{
         width: 70%;
-}
-  
+    }
 }
 
 /* Mobile styles: small screens (max-width: 767px) */
 @media screen and (max-width: 767px) {
-     .form-content{
+    .form-content{
         width: 60%;
     }
     .feedback-message {
-    font-size: 0.8rem;
+        font-size: 0.8rem;
     }
     .p-mail{
         font-size: 1.2rem;
