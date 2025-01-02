@@ -34,9 +34,9 @@ function Navbar() {
                 {/* Desktop navigation links */}
                 <ul className="nav-links-desktop">
                     <li><Link to="/home">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/tech-stack">TechStack</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
+                    <li><Link to="/tech-stack">TechStack</Link></li>
+                    <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
 
@@ -49,9 +49,9 @@ function Navbar() {
                     <ul className="nav-links-mobile">
                         {/* Links close the menu after navigation */}
                         <li><Link to="/home" onClick={closeMenu}>Home</Link></li>
-                        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-                        <li><Link to="/tech-stack" onClick={closeMenu}>Tech Stack</Link></li>
                         <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
+                        <li><Link to="/tech-stack" onClick={closeMenu}>Tech Stack</Link></li>
+                        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
                         <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
                     </ul>
                 </div>

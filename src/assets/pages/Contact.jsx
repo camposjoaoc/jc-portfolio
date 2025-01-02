@@ -16,7 +16,7 @@ function Contact() {
         }
     }, [feedbackMessage]); // Executa sempre que feedbackMessage mudar
     return (
-        <div className="container">
+        <div className="container mid-container">
             <section>
                 <div className="container-contact">
                     <h1 className="h1-title">CONTACT</h1>
