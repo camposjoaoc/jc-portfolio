@@ -5,13 +5,22 @@ body {
     background-color: variables.$background-color;
 }
 
+/* Root container for the app */
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
 .container {
-  margin: 20px auto; /* 10px no topo e na base, 20px nas laterais */
+  margin: 20px auto; 
   width: 100%; 
   max-width: 1600px; 
-  height: auto; 
-  max-height: 1024px; 
-  // background-color: lightgray; 
+  height: auto;  
+}
+
+.mid-container{
+ flex: 1;
 }
 
 /* Desktop styles: large screens (min-width: 1025px) */
@@ -19,7 +28,6 @@ body {
   .container {
     max-width: 1400px; 
     margin: 30px auto; 
-    max-height: 1200px; 
   }
 }
 
@@ -28,7 +36,6 @@ body {
   .container {
     max-width: 1000px; 
     margin: 15px auto; 
-    max-height: 900px; 
   }
 }
 
@@ -37,6 +44,5 @@ body {
   .container {
     max-width: 100%; 
     margin: 10px auto; 
-    max-height: none; 
   }
 }

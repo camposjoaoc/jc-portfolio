@@ -1,6 +1,6 @@
 import "../styles/techstack.scss";
 function TechStack() {
-    return <div className="container">
+    return <div className="container mid-container">
         <div className="container-techstack">
             <h1 className="tech-stack-title">MY TECH STACK 🔥</h1>
             <p className="tech-stack-info">The tools and technologies powering my recent work</p>
