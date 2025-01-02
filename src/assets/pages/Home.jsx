@@ -19,9 +19,11 @@ function Home() {
                 </div>
             </section>
 
-            {/* <section>
-                <div><h1>Future content</h1></div>
-            </section> */}
+            <section>
+                <div className="other">
+                    {/* <p>future content</p> */}
+                </div>
+            </section>
         </div >
     )
 }

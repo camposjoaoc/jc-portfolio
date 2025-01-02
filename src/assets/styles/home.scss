@@ -81,6 +81,11 @@
   }
 }
 
+.other{
+    width: inherit;
+    height: 20vh;
+}
+
 /* Desktop styles: large screens (min-width: 1025px) */
 @media screen and (min-width: 1025px) {
     .container-home{
