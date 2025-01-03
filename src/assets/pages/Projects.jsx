@@ -39,15 +39,23 @@ function Projects() {
                         cardTitle="BHROMAON"
                         about="Welcome to Bhromaon, a travel website designed to help users explore and plan safe journeys to various destinations worldwide."
                         skills="TechStack: JavaScript, Sass, HTML/CSS"
-                        livePreview=""
+                        livePreview="https://jc-bhromaon.netlify.app"
                         sourceCode="https://github.com/camposjoaoc/project-bhromaon"
                     />
                     <ProjectCard
                         imgIndex={4}
                         cardTitle="Genesis Design"
                         about="Genesis is a portfolio website built with HTML, CSS, and Sass, showcasing a product designer's work."
-                        skills="TechStack: JavaScript, Sass, HTML/CSS"
-                        livePreview=""
+                        skills="TechStack: Sass, HTML/CSS"
+                        livePreview="https://jc-genesis-design.netlify.app"
+                        sourceCode="https://github.com/camposjoaoc/project-genesis-design"
+                    />
+                    <ProjectCard
+                        imgIndex={5}
+                        cardTitle="Productly"
+                        about="Productly is a website that offers innovative tools for design thinking and validation. Join us to innovate and grow together!"
+                        skills="TechStack: Sass, HTML/CSS"
+                        livePreview="https://jc-productly.netlify.app"
                         sourceCode="https://github.com/camposjoaoc/project-genesis-design"
                     />
                 </div>
