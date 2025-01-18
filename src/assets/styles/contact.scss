@@ -1,17 +1,16 @@
 @use "variables";
 
 .container-contact,
-.form-content{
+.form-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto); 
+    grid-template-rows: repeat(4, auto);
     gap: 5px;
     box-sizing: border-box;
     margin: inherit;
     justify-items: center;
     justify-content: center;
 }
-
 
 .p-info,
 .h1-title,
@@ -21,7 +20,6 @@
     font-family: variables.$primary-font;
 }
 
-
 .p-info,
 .label-style,
 .input-style {
@@ -29,10 +27,9 @@
 }
 
 .h1-title,
-.p-mail{
+.p-mail {
     font-size: 2rem;
 }
-
 
 .p-info,
 .label-style {
@@ -40,14 +37,12 @@
 }
 
 .input-style {
-    color: white; 
+    color: white;
 }
-
 
 .p-mail a {
     text-decoration: none;
 }
-
 
 .label-style,
 .input-style {
@@ -63,27 +58,22 @@
 
 .h1-title,
 .p-mail {
-    background: linear-gradient(
-        to right,
-        variables.$gradient-color-one,
-        variables.$gradient-color-two
-    );
+    background: linear-gradient(to right, variables.$gradient-color-one, variables.$gradient-color-two);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .label-style {
     width: auto;
-    justify-self: center; 
+    justify-self: center;
     text-align: center;
 }
 
 .input-style {
     background-color: variables.$quaternary-color;
-    justify-self: center; 
+    justify-self: center;
     text-align: center;
 }
-
 
 .feedback-message {
     margin-top: 10px;
@@ -95,12 +85,14 @@
     padding: 10px;
 }
 
-.p-mail{
-    white-space: nowrap; 
-    overflow: hidden; 
+.p-mail {
+    white-space: nowrap;
+    overflow: hidden;
     border-right: 2px solid #fff; /* Simulates the cursor */
     width: 23.6ch; /* Width matches the number of characters */
-    animation: typing 3s steps(24, end), blink 0.7s step-end infinite;
+    animation:
+        typing 3s steps(24, end),
+        blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
@@ -118,30 +110,29 @@
     }
 }
 
-
 /* Desktop styles: large screens (min-width: 1025px) */
 @media screen and (min-width: 1025px) {
-    .form-content{
+    .form-content {
         width: 40%;
     }
 }
 
 /* Tablet styles: medium screens (768px to 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-     .form-content{
+    .form-content {
         width: 70%;
     }
 }
 
 /* Mobile styles: small screens (max-width: 767px) */
 @media screen and (max-width: 767px) {
-    .form-content{
+    .form-content {
         width: 60%;
     }
     .feedback-message {
         font-size: 0.8rem;
     }
-    .p-mail{
+    .p-mail {
         font-size: 1.2rem;
     }
 }

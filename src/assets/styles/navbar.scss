@@ -6,25 +6,25 @@
     align-items: center;
     padding-top: 20px;
 }
-    // Navbar logo/title: styled with custom font and colors, centered
+// Navbar logo/title: styled with custom font and colors, centered
 .navbar-title {
-        font-family: variables.$primary-font;
-        font-size: 1.9rem;
-        font-weight: 400;
-        line-height: 36px;
-        text-decoration: none;
-        cursor: pointer;
-        background: linear-gradient(
+    font-family: variables.$primary-font;
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 36px;
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient(
         to right,
-        variables.$gradient-color-one, /* Gradient start */
-        variables.$gradient-color-two  /* Gradient end */
+        variables.$gradient-color-one,
+        /* Gradient start */ variables.$gradient-color-two /* Gradient end */
     );
     -webkit-background-clip: text; /* Apply gradient to text */
     -webkit-text-fill-color: transparent; /* Make text transparent */
 }
 
-    // Desktop navigation links: aligned horizontally with spacing
-   .nav-links-desktop {
+// Desktop navigation links: aligned horizontally with spacing
+.nav-links-desktop {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -43,7 +43,9 @@
     font-weight: 400;
     color: variables.$tertiary-color; /* Text color */
     display: inline-block; /* Needed for transform */
-    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), color 0.4s ease; /* Smooth transitions */
+    transition:
+        transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+        color 0.4s ease; /* Smooth transitions */
 }
 
 .nav-links-desktop li a:hover {
@@ -51,8 +53,8 @@
     transform: scale(1.2) translateY(-2px); /* Scale and move up */
     background: linear-gradient(
         to right,
-        variables.$gradient-color-one, /* Gradient start */
-        variables.$gradient-color-two  /* Gradient end */
+        variables.$gradient-color-one,
+        /* Gradient start */ variables.$gradient-color-two /* Gradient end */
     );
     -webkit-background-clip: text; /* Apply gradient to text */
     -webkit-text-fill-color: transparent; /* Make text transparent */
@@ -143,26 +145,25 @@
     z-index: 4;
 }
 
-
 // Responsive styles: hide desktop links and display mobile elements on small screens
 
 /* Large screens (min-width: 1025px) */
 @media screen and (min-width: 1025px) and (max-width: 1285px) {
-    .navbar{
+    .navbar {
         padding-left: 5px;
     }
 }
 
 /* Tablet styles: medium screens (769px to 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .navbar{
+    .navbar {
         padding-left: 5px;
     }
 }
 
 /* Mobile styles: small screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
-    .navbar{
+    .navbar {
         padding-left: 5px;
     }
     .nav-links-desktop {
