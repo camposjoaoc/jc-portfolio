@@ -14,7 +14,7 @@ function Projects() {
                         cardTitle="Search Your Pokémon"
                         about="Welcome to Search Your Pokémon, a project built with React and JavaScript that uses the PokéAPI to fetch Pokémon images!"
                         skills="TechStack: React, JavaScript, Sass, HTML/CSS"
-                        livePreview=""
+                        livePreview="https://js-search-your-pokemon.netlify.app/"
                         sourceCode="https://github.com/camposjoaoc/search-your-pokemon"
                     />
                     <ProjectCard
@@ -22,7 +22,7 @@ function Projects() {
                         cardTitle="Magic Match"
                         about="This project is about building a Memory Game, made as a group activity during the Front-End course at Sundsgården school."
                         skills="TechStack: React, JavaScript, Sass, HTML/CSS"
-                        livePreview=""
+                        livePreview="https://magic-match-mg.netlify.app"
                         sourceCode="https://github.com/camposjoaoc/react-memory-game"
                     />
 
@@ -56,7 +56,7 @@ function Projects() {
                         about="Productly is a website that offers innovative tools for design thinking and validation. Join us to innovate and grow together!"
                         skills="TechStack: Sass, HTML/CSS"
                         livePreview="https://jc-productly.netlify.app"
-                        sourceCode="https://github.com/camposjoaoc/project-genesis-design"
+                        sourceCode="https://github.com/camposjoaoc/productly-figma-to-web"
                     />
                 </div>
             </div>

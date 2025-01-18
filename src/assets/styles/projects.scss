@@ -1,33 +1,29 @@
 @use "variables";
 
-.container-projects{
+.container-projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, auto); 
+    grid-template-rows: repeat(1, auto);
     gap: 5px;
     justify-items: center;
     text-align: center;
 }
 
-.projects-title{
+.projects-title {
     font-family: variables.$primary-font;
     font-size: 2rem;
-    background: linear-gradient(
-        to right,
-        variables.$gradient-color-one,
-        variables.$gradient-color-two
-    );
+    background: linear-gradient(to right, variables.$gradient-color-one, variables.$gradient-color-two);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.projects-info{
+.projects-info {
     font-family: variables.$primary-font;
     font-size: 1.5rem;
     color: variables.$quaternary-color;
 }
 
-.project-cards{
+.project-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -37,40 +33,39 @@
 
 /* Tablet styles: medium screens (768px to 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container-projects{
+    .container-projects {
         text-align: center;
         margin-top: 10px;
         padding: 0 5px;
     }
-    .projects-title{
+    .projects-title {
         font-size: 1.9rem;
     }
-    .projects-info{
+    .projects-info {
         font-size: 1.5rem;
     }
-    .project-cards{
+    .project-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, auto);
         padding: 20px;
     }
-    
 }
 
 /* Mobile styles: small screens (max-width: 767px) */
 @media screen and (max-width: 767px) {
-    .container-projects{
+    .container-projects {
         text-align: center;
         margin-top: 10px;
         padding: 0 5px;
     }
-    .projects-title{
+    .projects-title {
         font-size: 1.8rem;
     }
-    .projects-info{
+    .projects-info {
         font-size: 1.3rem;
     }
-    .project-cards{
+    .project-cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, auto);
