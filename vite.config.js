@@ -7,6 +7,5 @@ export default defineConfig({
   base: '/jc-portfolio/',
   server: {
     host: true,
-    historyApiFallback: true,
   },
 })
