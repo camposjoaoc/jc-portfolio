@@ -23,6 +23,7 @@ function App() {
                     <Route path="/tech-stack" element={<TechStack />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="*" element={<Home />} /> {/* Redirect to homepage */}
                 </Routes>
                 <Footer></Footer>
             </BrowserRouter>
