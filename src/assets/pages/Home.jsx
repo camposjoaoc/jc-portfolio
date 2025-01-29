@@ -1,5 +1,6 @@
 import "../styles/home.scss";
 import ProjectCard from "../components/ProjectCard";
+import imgProfile from "../img/img-profile.jpg";
 function Home() {
     return (
         <div className="container mid-container">
@@ -14,7 +15,7 @@ function Home() {
                         <h4 className="main-info">Take a look around my portfolio using the menu above: explore my projects, skills, learn more about me, and find out how to get in touch!</h4>
                     </div>
                     <div>
-                        <img src="../img/img-profile.jpg" alt="Profile photo" className="img-style" />
+                        <img src={imgProfile} alt="Profile photo" className="img-style" />
                     </div>
                 </div>
             </section>
