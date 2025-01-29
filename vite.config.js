@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/jc-portfolio',
   server: {
     host: true, // Permite que o servidor seja acessado na rede local
   },

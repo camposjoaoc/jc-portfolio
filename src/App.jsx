@@ -12,7 +12,7 @@ function App() {
     return (
         <>
             {/* Provides routing capabilities */}
-            <BrowserRouter>
+            <BrowserRouter basename="/jc-portfolio">
                 {/* Navbar component displayed on all pages */}
                 <Navbar></Navbar>
                 {/* Routes define the paths for navigation */}
