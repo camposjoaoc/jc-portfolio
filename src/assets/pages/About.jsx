@@ -1,4 +1,7 @@
 import "../styles/about.scss";
+import img_about_cl from "../img/img-about-cl.jpeg";
+import img_about_hr from "../img/img-about-hr.jpeg";
+import img_about_mc from "../img/img-about-mc.jpeg";
 function About() {
     return (
         <div className="container mid-container">
@@ -23,7 +26,7 @@ function About() {
                 </div>
                 <h2 className="main-title">Testimonials</h2>
                 <div>
-                    <img src="../img/img-about-mc.jpeg" alt="" className="img-person-style " />
+                    <img src={img_about_mc} alt="" className="img-person-style " />
                 </div>
                 <p className="text-info testimonials">
                     “João was one of my participants in the course IT: Front-end Developer during the fall semester 2024-2025.
@@ -35,7 +38,7 @@ function About() {
                     <span className="span-style">Michelle Andersson, Course Coordinator, IT: Front-end Developer, Sundsgården Folkhögskola.</span>
                 </p>
                 <div>
-                    <img src="../img/img-about-cl.jpeg" alt="" className="img-person-style " />
+                    <img src={img_about_cl} alt="" className="img-person-style " />
                 </div>
                 <p className="text-info testimonials">
                     “I had the pleasure of working alongside João at Compass UOL. As a software engineer, I collaborated closely with João in his role as a Quality Assurance Engineer.
@@ -47,7 +50,7 @@ function About() {
                     <span className="span-style">Clair Luis Jevinski, Software Engineer at IKEA.</span>
                 </p>
                 <div>
-                    <img src="../img/img-about-hr.jpeg" alt="" className="img-person-style " />
+                    <img src={img_about_hr} alt="" className="img-person-style " />
                 </div>
                 <p className="text-info testimonials">
                     “I am writing this recommendation with great enthusiasm for my former colleague, João, with whom I had the pleasure of working alongside during our time at UOL in the software testing department.

@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
   base: '/jc-portfolio',
   server: {
-    host: true, // Permite que o servidor seja acessado na rede local
+    host: true,
+  },
+  devServer: {
+    historyApiFallback: true,
   },
 })
