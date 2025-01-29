@@ -7,5 +7,9 @@ export default defineConfig({
   base: '/jc-portfolio/',
   server: {
     host: true,
+    watch: {
+      usePolling: true
+    },
   },
+
 })
