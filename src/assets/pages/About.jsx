@@ -8,9 +8,9 @@ function About() {
             <div className="container-about">
                 <h1 className="about-title">ABOUT ME</h1>
                 <p className="about-info">
-                    Hello! My name is João, and I'm starting my journey in the exciting world of front-end development.
+                    Hello! My name is João, and I&apos;m starting my journey in the exciting world of front-end development.
                     I recently completed a front-end development course at Sundsgården School in Sweden 🇸🇪, where I gained valuable hands-on experience and foundational knowledge in web technologies.
-                    Now, I'm actively seeking opportunities to contribute and grow as a front-end developer, bringing creativity and technical skills to impactful projects.
+                    Now, I&apos;m actively seeking opportunities to contribute and grow as a front-end developer, bringing creativity and technical skills to impactful projects.
                 </p>
                 <h2 className="main-title">Work Experience</h2>
                 <div>
@@ -43,7 +43,7 @@ function About() {
                 <p className="text-info testimonials">
                     “I had the pleasure of working alongside João at Compass UOL. As a software engineer, I collaborated closely with João in his role as a Quality Assurance Engineer.
                     His meticulous attention to detail was invaluable. He not only possessed a deep understanding of testing methodologies, but also brought a fresh perspective that often unearthed critical bugs we might have missed.
-                    João's proactive approach to identifying potential issues early in the development cycle saved us countless headaches down the road.
+                    João&apos;s proactive approach to identifying potential issues early in the development cycle saved us countless headaches down the road.
                     Beyond his technical skills, he is an exceptional communicator. He have a knack for clearly documenting test cases, ensuring everyone is on the same page.
                     His positive attitude and willingness to collaborate effectively with developers fostered a strong working relationship across teams.
                     This open communication made debugging a smooth process and ultimately led to the release of high-quality software.”
@@ -56,7 +56,7 @@ function About() {
                     “I am writing this recommendation with great enthusiasm for my former colleague, João, with whom I had the pleasure of working alongside during our time at UOL in the software testing department.
                     João is, without a doubt, an exceptional individual who would be a huge asset to any company.
                     He can brighten any work environment with his positive and cheerful energy, making even my most challenging days more enjoyable.
-                    Beyond his positive spirit, João consistently demonstrates a meticulous approach to his work, making him the most organized and detail-oriented person I've ever met in the workplace.
+                    Beyond his positive spirit, João consistently demonstrates a meticulous approach to his work, making him the most organized and detail-oriented person I&apos;ve ever met in the workplace.
                     He was always going beyond the expected.
                     He readily offered assistance whenever our team needed, patiently explaining complex concepts, and helping others. In conclusion, João is a remarkable professional and would be an amazing addition to any team.”
                     <span className="span-style">Haime Reis, Digital Marketing Specialist.</span>
