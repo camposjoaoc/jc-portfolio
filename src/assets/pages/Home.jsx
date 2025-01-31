@@ -1,5 +1,4 @@
 import "../styles/home.scss";
-import ProjectCard from "../components/ProjectCard";
 import imgProfile from "../img/img-profile.jpg";
 function Home() {
     return (
@@ -8,9 +7,7 @@ function Home() {
                 <div className="container-home">
                     <div>
                         <h2 className="main-info">Hello 👨🏻‍💻</h2>
-                        <div className="mobile-main-title">
-                            <h1 className="main-title-name">I&apos;m João Canabarro Campos.</h1>
-                        </div>
+                        <h1 className="main-title-name">I'm João Canabarro Campos.</h1>
                         <h3 className="main-info">I design and build web experiences that are modern, efficient, and impactful.</h3>
                         <h4 className="main-info">Take a look around my portfolio using the menu above: explore my projects, skills, learn more about me, and find out how to get in touch!</h4>
                     </div>

@@ -89,9 +89,9 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid #fff; /* Simulates the cursor */
-    width: 23.6ch; /* Width matches the number of characters */
+    width: 29ch; /* Width matches the number of characters */
     animation:
-        typing 3s steps(24, end),
+        typing 3s steps(29, end),
         blink 0.7s step-end infinite;
 }
 
@@ -100,7 +100,7 @@
         width: 0;
     }
     to {
-        width: 24ch; /* Matches the number of characters to display */
+        width: 29ch; /* Matches the number of characters to display */
     }
 }
 

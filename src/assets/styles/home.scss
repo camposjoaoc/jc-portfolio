@@ -17,34 +17,31 @@
     order: 2; /* IMG Div*/
 }
 
-.main-title-name{
+.main-title-name {
     font-family: variables.$primary-font;
     font-size: 2.5rem;
     font-weight: bold;
-    background: linear-gradient(to right, variables.$gradient-color-one, variables.$gradient-color-two);
+    background: linear-gradient(
+        to right,
+        variables.$gradient-color-two,
+        variables.$gradient-color-one,
+        variables.$gradient-color-two
+    );
+    background-size: 250%;
+    background-position: 0% 50%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid #fff; /* Simulates the cursor */
-    width: 23ch; /* Width matches the number of characters */
-    animation:
-        typing 4s steps(23, end),
-        blink 0.7s step-end infinite;
+    animation: gradientMove 7s linear infinite;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
     }
-    to {
-        width: 23ch; /* Matches the number of characters to display */
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
+    100% {
+        background-position: 100% 50%;
     }
 }
 
@@ -114,14 +111,7 @@
         width: 225px;
         height: 225px;
     }
-
-    .mobile-main-title {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .main-title {
+    .main-title-name {
         font-size: 2.1rem;
         justify-self: center;
     }
@@ -153,14 +143,7 @@
         width: 195px;
         height: 195px;
     }
-
-    .mobile-main-title {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .main-title {
+    .main-title-name {
         font-size: 1.5rem;
         justify-self: center;
     }
