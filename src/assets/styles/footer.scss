@@ -25,7 +25,6 @@
 
 /* Icon links styling */
 .social-icons a {
-    font-size: 1em;
     color: variables.$tertiary-color;
     display: inline-block; /* Needed for transform */
     transition:
@@ -44,4 +43,18 @@
     );
     -webkit-background-clip: text; /* Apply gradient to text */
     -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+
+/* Tablet styles: medium screens (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer-content p {
+        font-size: 0.9rem; /* Reduce text size */
+    }
+}
+
+/* Mobile styles: small screens (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    .footer-content p {
+        font-size: 0.8rem; /* Reduce text size */
+    }
 }

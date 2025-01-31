@@ -40,10 +40,6 @@
     color: white;
 }
 
-.p-mail a {
-    text-decoration: none;
-}
-
 .label-style,
 .input-style {
     width: 100%;
@@ -86,6 +82,7 @@
 }
 
 .p-mail {
+    cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid #fff; /* Simulates the cursor */
