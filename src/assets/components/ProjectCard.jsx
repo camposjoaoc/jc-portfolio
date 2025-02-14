@@ -32,8 +32,9 @@ function ProjectCard(props) {
                         <p className="skills">{props.skills}</p>
                     </div>
                     <div className="link-project">
-                        <a href={props.livePreview} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-link"></i> Live Preview</a>
-                        <a href={props.sourceCode} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i> View Code</a>
+                        <a href={props.livePreview} target="_blank" rel="noopener noreferrer" onClick={(event) => event.stopPropagation()}><i className="fa-solid fa-link"></i> Live Preview</a>
+                        <a href={props.sourceCode} target="_blank" rel="noopener noreferrer" onClick={(event) => event.stopPropagation()}><i className="fa-brands fa-github"></i> View Code</a>
+
                     </div>
                 </div>
             </div>
