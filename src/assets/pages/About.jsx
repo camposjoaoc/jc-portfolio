@@ -1,4 +1,5 @@
 import "../styles/about.scss";
+import DownloadButton from "../components/downloadButton";
 import img_about_cl from "../img/img-about-cl.jpeg";
 import img_about_hr from "../img/img-about-hr.jpeg";
 import img_about_mc from "../img/img-about-mc.jpeg";
@@ -61,6 +62,14 @@ function About() {
                     He readily offered assistance whenever our team needed, patiently explaining complex concepts, and helping others. In conclusion, João is a remarkable professional and would be an amazing addition to any team.”
                     <span className="span-style">Haime Reis, Digital Marketing Specialist.</span>
                 </p>
+                <div>
+                    <DownloadButton
+                        label="Download my CV"
+                        fileUrl="https://1drv.ms/b/c/4feb6cf2efd996b0/ETI8jGbFbZdAq1eRFSzIbEkBtYGXOUQtJu5-ALQYjvjVQw?e=gBeKix"
+                        fileName="joao-campos-cv.pdf"
+                        openInNewTab={true}
+                    />
+                </div>
             </div>
         </div >
     )
