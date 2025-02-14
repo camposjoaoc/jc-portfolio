@@ -23,7 +23,7 @@ const cardImages = [ProjectPic0, ProjectPic1, ProjectPic2, ProjectPic3, ProjectP
 function ProjectCard(props) {
     return (
         <>
-            <div className="card">
+            <div className="card" onClick={() => window.open(props.livePreview, "_blank")} role="button" tabIndex={0}>
                 <img src={cardImages[props.imgIndex]} alt="Website Image" className="img-website" />
                 <div className="card-infos">
                     <div>
