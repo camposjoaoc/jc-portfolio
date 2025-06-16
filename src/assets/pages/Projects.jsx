@@ -10,6 +10,14 @@ function Projects() {
                 <div className="project-cards">
                     {/* Each project card is created with its respective props */}
                     <ProjectCard
+                        imgIndex={6}
+                        cardTitle="Seedly"
+                        about="Seedly! Buy seeds and manage your garden tasks for your purchases."
+                        skills="TechStack: React, Typescript, Tailwind HTML/CSS, Nod.js, Express, Supabase"
+                        livePreview="https://seedly-tau.vercel.app/"
+                        sourceCode="https://github.com/camposjoaoc/Seedly"
+                    />
+                    <ProjectCard
                         imgIndex={0}
                         cardTitle="Search Your Pokémon"
                         about="Welcome to Search Your Pokémon, a project built with React and JavaScript that uses the PokéAPI to fetch Pokémon images!"
