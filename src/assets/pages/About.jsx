@@ -1,5 +1,5 @@
 import "../styles/about.scss";
-import DownloadButton from "../components/downloadButton";
+import DownloadButton from "../components/DownloadButton";
 import img_about_cl from "../img/img-about-cl.jpeg";
 import img_about_hr from "../img/img-about-hr.jpeg";
 import img_about_mc from "../img/img-about-mc.jpeg";
