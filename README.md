@@ -9,7 +9,7 @@ This project is powered by some amazing technologies and best practices:
 - Organized and modular codebase for easy scaling and collaboration.
 - Responsive design to ensure it looks great on all devices 📱💻.
 
-## 📄 Pages
+## 📄 Sections
 Here’s what you’ll find:
 - **Home:** A warm welcome and overview of my portfolio.
 - **About:** A little more about me and my journey.
@@ -32,7 +32,4 @@ This project is constantly evolving! I'm adding new features and improving it ov
 - **GitHub:** [github.com/camposjoaoc](https://github.com/camposjoaoc)  
 - **LinkedIn:** [linkedin.com/in/joaoccampos](https://www.linkedin.com/in/joaoccampos/)  
 
-## 📜 License
-This project is licensed under the **MIT License**.  
-Feel free to use, modify, and distribute it as you wish. See the `LICENSE` file for details.
 

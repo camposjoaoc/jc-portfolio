@@ -1,71 +1,76 @@
 @use "variables";
 
 .btn-style {
-    width: auto;
-    height: 5vh;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-family: variables.$primary-font;
-    cursor: pointer;
-    border: 1px solid transparent;
-    background-color: variables.$tertiary-color;
-    color: variables.$background-color;
-    display: inline-block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition:
-        transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
-        box-shadow 0.4s ease;
+  width: auto;
+  height: 5vh;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-family: variables.$primary-font;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: variables.$tertiary-color;
+  color: variables.$background-color;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+    box-shadow 0.4s ease;
+  border-radius: 1.5rem;
 }
 
 .btn-style:hover {
-    transform: scale(1.1) translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to right, variables.$gradient-color-one, variables.$gradient-color-two);
-    -webkit-background-clip: text; /* Apply gradient to text */
-    -webkit-text-fill-color: transparent; /* Make text transparent */
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    to right,
+    variables.$gradient-color-one,
+    variables.$gradient-color-two
+  );
+  -webkit-background-clip: text; /* Apply gradient to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
 }
 
 .btn-style:active {
-    transform: scale(1) translateY(0);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    transition:
-        transform 0.1s ease,
-        box-shadow 0.1s ease;
+  transform: scale(1) translateY(0);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
 }
 
 /* Desktop styles: large screens (min-width: 1025px) */
 @media screen and (min-width: 1025px) {
-    .btn-style {
-        height: 6vh;
-        padding: 15px 30px;
-        font-size: 18px;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    }
+  .btn-style {
+    height: 6vh;
+    padding: 15px 30px;
+    font-size: 18px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Tablet styles: medium screens (768px to 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .btn-style {
-        height: 5.5vh;
-        padding: 12px 25px;
-        font-size: 16px;
-        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
-    }
+  .btn-style {
+    height: 5.5vh;
+    padding: 12px 25px;
+    font-size: 16px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Mobile styles: small screens (max-width: 767px) */
 @media screen and (max-width: 767px) {
-    .btn-style {
-        width: 100%;
-        height: auto;
-        padding: 15px;
-        font-size: 1rem;
-        box-shadow: none;
-        text-align: center;
-    }
+  .btn-style {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    font-size: 1rem;
+    box-shadow: none;
+    text-align: center;
+  }
 
-    .btn-style:hover {
-        transform: none;
-        box-shadow: none;
-    }
+  .btn-style:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
