@@ -1,71 +1,114 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import '../styles/navbar.scss';
+import { useState } from "react";
+import "../styles/navbar.scss";
 
 function Navbar() {
-    // State to track mobile menu visibility
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // State to track mobile menu visibility
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    // Toggles the mobile menu
-    const toggleMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
+  // Toggles the mobile menu
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
-    // Closes the mobile menu
-    const closeMenu = () => {
-        setIsMobileMenuOpen(false);
-    };
+  // Closes the mobile menu
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
-    // Navigation hook for programmatic redirection
-    const navigate = useNavigate();
+  // Scroll to section by id
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    closeMenu();
+  };
 
-    // Redirect to home
-    const goToHome = () => {
-        navigate('/');
-    };
-
-    return (
-        <div className="container">
-            <nav className="navbar">
-
-                {/* Title redirects to home */}
-                <div className="navbar-title" onClick={goToHome}>{'{'}JC DEV{'}'}</div>
-
-                {/* Desktop navigation links */}
-                <ul className="nav-links-desktop">
-                    <li><Link to="/home">Home</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/tech-stack">TechStack</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                </ul>
-
-                {/* Mobile menu */}
-                <div className={`mobile-menu ${isMobileMenuOpen ? 'flex' : ''}`}>
-                    {/* Close button for mobile menu */}
-                    <button className="close" onClick={closeMenu}>
-                        <i className="fa-solid fa-xmark"></i>
-                    </button>
-                    <ul className="nav-links-mobile">
-                        {/* Links close the menu after navigation */}
-                        <li><Link to="/home" onClick={closeMenu}>Home</Link></li>
-                        <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
-                        <li><Link to="/tech-stack" onClick={closeMenu}>Tech Stack</Link></li>
-                        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-                        <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
-                    </ul>
-                </div>
-
-                {/* Hamburger button toggles mobile menu */}
-                <button className="hamburger" onClick={toggleMenu}>
-                    <i className="fa-solid fa-bars"></i>
-                </button>
-
-                {/* Overlay closes the menu when clicked */}
-                {isMobileMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
-            </nav>
+  return (
+    <div className="container">
+      <nav className="navbar">
+        {/* Title scrolls to home */}
+        <div className="navbar-title" onClick={() => scrollToSection("home")}>
+          {"{"}JC. DEV{"}"}
         </div>
-    );
+
+        {/* Desktop navigation links */}
+        <ul className="nav-links-desktop">
+          <li>
+            <a href="#home" onClick={() => scrollToSection("home")}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#projects" onClick={() => scrollToSection("projects")}>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#techstack" onClick={() => scrollToSection("techstack")}>
+              Tech Stack
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={() => scrollToSection("about")}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => scrollToSection("contact")}>
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        {/* Mobile menu */}
+        <div className={`mobile-menu ${isMobileMenuOpen ? "flex" : ""}`}>
+          {/* Close button for mobile menu */}
+          <button className="close" onClick={closeMenu}>
+            <i className="fa-solid fa-xmark"></i>
+          </button>
+          <ul className="nav-links-mobile">
+            {/* Links close the menu after navigation */}
+            <li>
+              <a href="#home" onClick={() => scrollToSection("home")}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={() => scrollToSection("projects")}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#techstack" onClick={() => scrollToSection("techstack")}>
+                Tech Stack
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={() => scrollToSection("about")}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={() => scrollToSection("contact")}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Hamburger button toggles mobile menu */}
+        <button className="hamburger" onClick={toggleMenu}>
+          <i className="fa-solid fa-bars"></i>
+        </button>
+
+        {/* Overlay closes the menu when clicked */}
+        {isMobileMenuOpen && (
+          <div className="overlay" onClick={closeMenu}></div>
+        )}
+      </nav>
+    </div>
+  );
 }
 
 export default Navbar;
