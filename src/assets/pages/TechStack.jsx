@@ -12,7 +12,7 @@ import img_vscode from "../img/img-techstack-vscode.svg";
 import img_tailwind from "../img/img-techstack-tailwind.svg";
 import img_typescript from "../img/img-techstack-typescript.svg";
 import img_node from "../img/img-techstack-node.svg";
-import img_mongodb from "../img/img-techstack-mongodb.svg";
+import img_mongodb from "../img/img-techstack-mongo.svg";
 import img_docker from "../img/img-techstack-docker.svg";
 import img_swagger from "../img/img-techstack-swagger.svg";
 import img_postman from "../img/img-techstack-postman.svg";
