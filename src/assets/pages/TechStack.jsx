@@ -19,6 +19,86 @@ import img_postman from "../img/img-techstack-postman.svg";
 import img_figma from "../img/img-techstack-figma.svg";
 import img_cypress from "../img/img-techstack-cypress.svg";
 import img_jira from "../img/img-techstack-jira.svg";
+
+const techs = [
+  {
+    name: "HTML",
+    img: img_html,
+    url: "https://html.spec.whatwg.org/multipage/",
+  },
+  {
+    name: "CSS",
+    img: img_css,
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  { name: "Sass", img: img_sass, url: "https://sass-lang.com/" },
+  {
+    name: "Tailwind",
+    img: img_tailwind,
+    url: "https://tailwindcss.com/",
+  },
+  {
+    name: "Bootstrap",
+    img: img_bootstrap,
+    url: "https://getbootstrap.com",
+  },
+  { name: "React", img: img_react, url: "https://react.dev/" },
+  {
+    name: "JavaScript",
+    img: img_js,
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "TypeScript",
+    img: img_typescript,
+    url: "https://www.typescriptlang.org/",
+  },
+  { name: "Git", img: img_git, url: "https://git-scm.com" },
+  { name: "GitHub", img: img_github, url: "https://github.com/" },
+  {
+    name: "VS Code",
+    img: img_vscode,
+    url: "https://code.visualstudio.com",
+  },
+  {
+    name: "API",
+    img: img_api,
+    url: "https://developer.mozilla.org/en-US/docs/Web/API",
+  },
+  {
+    name: "Swagger",
+    img: img_swagger,
+    url: "https://swagger.io/",
+  },
+  {
+    name: "Postman",
+    img: img_postman,
+    url: "https://www.postman.com/",
+  },
+  { name: "Node", img: img_node, url: "https://nodejs.org/en/" },
+  {
+    name: "MongoDB",
+    img: img_mongodb,
+    url: "https://www.mongodb.com/",
+  },
+  {
+    name: "Docker",
+    img: img_docker,
+    url: "https://www.docker.com/",
+  },
+  { name: "Figma", img: img_figma, url: "https://www.figma.com/" },
+  {
+    name: "Cypress",
+    img: img_cypress,
+    url: "https://www.cypress.io/",
+  },
+  {
+    name: "Jira",
+    img: img_jira,
+    url: "https://www.atlassian.com/software/jira",
+  },
+];
+
 function TechStack() {
   return (
     <div className="container mid-container">
@@ -28,198 +108,17 @@ function TechStack() {
           The tools and technologies powering my recent work
         </p>
         <div className="grid-skills">
-          <div>
-            <a
-              href="https://html.spec.whatwg.org/multipage/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_html} alt="HTML5 logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_css} alt="CSS logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://sass-lang.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_sass} alt="Sass logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://tailwindcss.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={img_tailwind}
-                alt="Tailwind logo"
-                className="img-logo"
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://getbootstrap.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={img_bootstrap}
-                alt="Bootstrap logo"
-                className="img-logo"
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://react.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_react} alt="React logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_js} alt="JavaScript logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.typescriptlang.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={img_typescript}
-                alt="TypeScript logo"
-                className="img-logo"
-              />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://git-scm.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_git} alt="Git logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_github} alt="GitHub logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://code.visualstudio.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_vscode} alt="VS Code logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/API"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_api} alt="API logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://swagger.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_swagger} alt="Swagger logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.postman.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_postman} alt="Postman logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://nodejs.org/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_node} alt="Node logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.mongodb.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_mongodb} alt="MongoDB logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.docker.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_docker} alt="Docker logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.figma.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_figma} alt="Figma logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.cypress.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_cypress} alt="Cypress logo" className="img-logo" />
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.atlassian.com/software/jira"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img_jira} alt="Jira logo" className="img-logo" />
-            </a>
-          </div>
+          {techs.map((tech) => (
+            <div key={tech.name} style={{ textAlign: "center" }}>
+              <a href={tech.url} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={tech.img}
+                  alt={`${tech.name} logo`}
+                  className="img-logo"
+                />
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </div>
