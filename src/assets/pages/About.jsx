@@ -65,7 +65,7 @@ function About() {
                 <div>
                     <DownloadButton
                         label="Download my CV"
-                        fileUrl="https://drive.google.com/file/d/1HN7do1-ME6gqi1WDoWP5KJ1tYOO1qLk3/view?usp=drive_link"
+                        fileUrl="https://drive.google.com/file/d/1iyGlqnkAgDwOIZEdBPOpMCggUsTfEFnJ/view?usp=drive_link"
                         fileName="joao-campos-cv.pdf"
                         openInNewTab={true}
                     />
