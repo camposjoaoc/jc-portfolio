@@ -23,7 +23,7 @@ function Projects() {
           <ProjectCard
             imgIndex={7}
             cardTitle="School Catalog"
-            about="School Catalog! This project is a simple course catalog application designed to manage and display a list of courses and details."
+            about="School Catalog! This project is a simple course catalog application designed to manage and display a list of courses."
             skills="TechStack: React, JavaScript, Sass, HTML/CSS"
             livePreview="https://internship.joaocampos.net/"
             sourceCode="https://github.com/camposjoaoc/course-catalog"
@@ -61,7 +61,7 @@ function Projects() {
             livePreview="https://jc-bhromaon.netlify.app"
             sourceCode="https://github.com/camposjoaoc/project-bhromaon"
           />
-          <ProjectCard
+          {/* <ProjectCard
             imgIndex={4}
             cardTitle="Genesis Design"
             about="Genesis is a portfolio website built with HTML, CSS, and Sass, showcasing a product designer's work."
@@ -76,7 +76,7 @@ function Projects() {
             skills="TechStack: Sass, HTML/CSS"
             livePreview="https://jc-productly.netlify.app"
             sourceCode="https://github.com/camposjoaoc/productly-figma-to-web"
-          />
+          /> */}
         </div>
       </div>
     </div>
