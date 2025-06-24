@@ -3,6 +3,7 @@ import DownloadButton from "../components/DownloadButton";
 import img_about_cl from "../img/img-about-cl.webp";
 import img_about_hr from "../img/img-about-hr.webp";
 import img_about_mc from "../img/img-about-mc.webp";
+import img_about_mv from "../img/img-about-mv.webp";
 function About() {
   return (
     <div className="container mid-container">
@@ -44,30 +45,45 @@ function About() {
             Front-end Developer | Sundsgården | Sweden | 2024 - 2025
           </p>
           <p className="text-info">
-            Professional English| Malmö University | Sweden | 2024
-            - 2025
+            Professional English| Malmö University | Sweden | 2024 - 2025
           </p>
           <p className="text-info">
-            Bachelor's in Systems Analysis and Development | Brazil | 2016
-            - 2018
+            Bachelor's in Systems Analysis and Development | Brazil | 2016 -
+            2018
           </p>
         </div>
         <h2 className="main-title">Testimonials</h2>
         <div className="testimonials-grid">
           <div>
+            <img src={img_about_mv} alt="" className="img-person-style " />
+            <p className="text-info testimonials">
+              “João was an excellent student in my backend programming class. We
+              studied Node.js, Express, databases, and Agile development. João
+              always worked very hard and wanted to learn as much as possible.
+              He was great to work with in team projects and helped other
+              students too. He finished all his work on time and asked good
+              questions when he needed help. I would definitely recommend João
+              for any job, he will do great work!”
+              <span className="span-style">
+                Michiel van der Gragt, Course Coordinator, IT: Back-end Developer,
+                Sundsgården Folkhögskola.
+              </span>
+            </p>
+          </div>
+          <div>
             <img src={img_about_mc} alt="" className="img-person-style " />
             <p className="text-info testimonials">
               “João was one of my participants in the course IT: Front-end
               Developer during the fall semester 2024-2025. During the course,
-              Joao showed a great interest for learning to code. He was
+              João showed a great interest for learning to code. He was
               dedicated to his studies, eager to learn, and really invested his
               energy into learning as much as he could. This dedication could
               easily be seen in his assignments. He turned in his assignments on
               time and with well written and thought-out code. Even when the
-              course got more difficult, Joao always approached each situation
+              course got more difficult, João always approached each situation
               calmly and with a positive attitude. He was happy to help any
               other participant that needed it and was patient with those who
-              needed help. It was an absolute joy to have Joao in my course and
+              needed help. It was an absolute joy to have João in my course and
               I wish him all the best in the future. I hope our paths cross
               again!”
               <span className="span-style">
