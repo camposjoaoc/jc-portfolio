@@ -9,6 +9,7 @@ import ProjectPic4 from "../img/img-project-pic-4.webp";
 import ProjectPic5 from "../img/img-project-pic-5.webp";
 import ProjectPic6 from "../img/img-project-pic-6.webp";
 import ProjectPic7 from "../img/img-project-pic-7.webp";
+import ProjectPic8 from "../img/img-project-pic-8.webp";
 
 ProjectCard.propTypes = {
     imgIndex: PropTypes.number.isRequired, // Ensure it is a number and required
@@ -20,7 +21,7 @@ ProjectCard.propTypes = {
 };
 
 // Store all website images in an array for easy indexing
-const cardImages = [ProjectPic0, ProjectPic1, ProjectPic2, ProjectPic3, ProjectPic4, ProjectPic5, ProjectPic6, ProjectPic7];
+const cardImages = [ProjectPic0, ProjectPic1, ProjectPic2, ProjectPic3, ProjectPic4, ProjectPic5, ProjectPic6, ProjectPic7, ProjectPic8];
 
 function ProjectCard(props) {
     return (

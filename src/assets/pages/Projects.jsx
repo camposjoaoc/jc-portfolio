@@ -13,10 +13,18 @@ function Projects() {
         <div className="project-cards">
           {/* Each project card is created with its respective props */}
           <ProjectCard
+            imgIndex={8}
+            cardTitle="The Cozy Kitchen"
+            about="The Cozy Kitchen is a full-stack project that combines a RESTful API and a live website for managing and viewing recipes."
+            skills="TechStack: React, Typescript, Tailwind HTML/CSS, Node.js, Express, MongoDB"
+            livePreview="https://thecozykitchen.joaocampos.net/"
+            sourceCode="https://github.com/camposjoaoc/the-cozy-kitchen"
+          />
+          <ProjectCard
             imgIndex={6}
             cardTitle="Seedly"
             about="Seedly! Buy seeds and manage your garden tasks for your purchases."
-            skills="TechStack: React, Typescript, Tailwind HTML/CSS, Nod.js, Express, Supabase"
+            skills="TechStack: React, Typescript, Tailwind HTML/CSS, Node.js, Express, Supabase"
             livePreview="https://seedly-tau.vercel.app/"
             sourceCode="https://github.com/camposjoaoc/Seedly"
           />
@@ -61,7 +69,7 @@ function Projects() {
             livePreview="https://jc-bhromaon.netlify.app"
             sourceCode="https://github.com/camposjoaoc/project-bhromaon"
           />
-          {/* <ProjectCard
+          <ProjectCard
             imgIndex={4}
             cardTitle="Genesis Design"
             about="Genesis is a portfolio website built with HTML, CSS, and Sass, showcasing a product designer's work."
@@ -76,7 +84,7 @@ function Projects() {
             skills="TechStack: Sass, HTML/CSS"
             livePreview="https://jc-productly.netlify.app"
             sourceCode="https://github.com/camposjoaoc/productly-figma-to-web"
-          /> */}
+          />
         </div>
       </div>
     </div>
